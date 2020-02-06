@@ -1,13 +1,13 @@
 const properties = require('./json/properties.json');
 const users = require('./json/users.json');
-const {Pool} = require('pg');
+const {pool} = require('../db/index');
 
-const pool = new Pool({
-  user: 'vagrant',
-  password: '123',
-  host: 'localhost',
-  database: 'lightbnb'
-});
+// const pool = new Pool({
+//   user: 'vagrant',
+//   password: '123',
+//   host: 'localhost',
+//   database: 'lightbnb'
+// });
 
 /// Users
 
